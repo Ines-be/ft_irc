@@ -4,10 +4,9 @@
 #include "Channel.hpp"
 
 Bot::Bot() : _name("bot") {
-	this->_badWords.push_back("travail");
-	this->_badWords.push_back("elon musk");
-	this->_badWords.push_back("nword");
-	this->_badWords.push_back("hitler");
+	this->_badWords.push_back("badword1");
+	this->_badWords.push_back("badword2");
+	this->_badWords.push_back("badword3");
 }
 
 Bot::~Bot() {}
