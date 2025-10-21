@@ -308,7 +308,7 @@ std::string	Server::retrieveMessage(int fd) {
 	char	str[SIZE_MAX_MSG];
 
 	memset(str, 0, SIZE_MAX_MSG);
-	ssize_t bytesRecv = recv(fd, &str, SIZE_MAX_MSG - 1, 0);
+	ssize_t bytesRecv = recv(fd, &str, sizeof(SIZE_MAX_MSG) - 1, 0);
 	if (bytesRecv == -1)
 		throw Server::err("Nothing to retrieve");
 	if (bytesRecv < 0 || bytesRecv > 512)
