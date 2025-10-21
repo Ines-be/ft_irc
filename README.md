@@ -1,12 +1,24 @@
 # IRC (C++98) — RFC-Compliant IRC Server & Client
 
 ## 💬 Overview
-IRC++ is a fully **RFC-compliant Internet Relay Chat (IRC)** server and client implemented in **C++98**.  
-It uses `select()` to handle multiple clients concurrently in a **non-blocking** manner over **TCP/IP**.  
-Users can chat privately, join channels, and manage them through standard IRC commands and modes.  
-Channel operators can set options such as invite-only mode, channel key, topic restrictions, operator privileges, and user limits.  
-The project includes a built-in **moderation bot** present in every channel that automatically kicks users using forbidden words.  
-It can be tested with standard IRC clients like **irssi**, or simply with **netcat**.  
+
+**IRC++** is a fully **RFC-compliant Internet Relay Chat (IRC)** server and client written in **C++98**.  
+It uses the `select()` system call to handle multiple clients **concurrently and non-blockingly** over **TCP/IP**.
+
+The server allows users to:
+- **Chat privately** or in channels  
+- **Join and manage channels** using standard IRC commands  
+- **Set channel options**, such as:
+  - Invite-only access  
+  - Channel key (password)  
+  - Topic restrictions  
+  - Operator privileges  
+  - User limits  
+
+A built-in **moderation bot** is present in every channel. It automatically **kicks users who send forbidden words**.  
+
+You can connect using any standard IRC client, such as **irssi**, or test directly with **netcat**.
+
 
 ## 🚀 Features
 - Full compliance with **IRC Protocol** (RFC-based implementation)
