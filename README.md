@@ -82,6 +82,9 @@ All mode and operator changes are broadcast to the channel and follow standard I
 
 ## 🛠️ Setup
 ```bash
+# Clone the repository
+git clone https://github.com/Ines-be/ft_irc
+cd ft_irc
 
 # Build the server
 make
